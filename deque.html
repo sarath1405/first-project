@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>deque</title>
+</head>
+<body>
+    <header class="header"><h1>CP HANDBOOK</h1></header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="file:///C:/Users/SARATH%20CHANDRA/OneDrive/Desktop/cpp%20project/html/home.html" class="button"><span>Home</span></a></li>
+            <li><a href="file:///C:/Users/SARATH%20CHANDRA/OneDrive/Desktop/cpp%20project/html/containers.html" class="button1"><span>Containers</span></a></li>
+            <li><a href="#" class="button"><span>Algorithms</span></a></li>
+            <li><a href="#" class="button"><span>About</span></a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <header class="header"><h1>Double-Ended-Queue :</h1></header>
+        <section class="introduction">
+            <p><strong>deque</strong> (usually pronounced like "deck") is an irregular acronym of Double Ended QUEue.
+                Double-ended queues are sequence containers with dynamic sizes that can be expanded or contracted on 
+                both ends (either its front or its back).</p>
+            <p>Therefore, they provide a functionality similar to vectors, but with efficient insertion and deletion 
+                of elements also at the beginning of the sequence, and not only at its end. But, unlike vectors, 
+                deques are not guaranteed to store all its elements in contiguous storage locations: accessing 
+                elements in a deque by offsetting a pointer to another element causes undefined behavior.</p>
+            <p>Both vectors and deques provide a very similar interface and can be used for similar purposes, 
+                but internally both work in quite different ways: While vectors use a single array that needs 
+                to be occasionally reallocated for growth, the elements of a deque can be scattered in different 
+                chunks of storage, with the container keeping the necessary information internally to provide direct 
+                access to any of its elements in constant time and with a uniform sequential interface (through iterators). 
+                Therefore, deques are a little more complex internally than vectors, but this allows them to grow more 
+                efficiently under certain circumstances, especially with very long sequences, where reallocations become 
+                more expensive.</p>
+            <p>For operations that involve frequent insertion or removals of elements at positions other 
+                than the beginning or the end, deques perform worse and have less consistent iterators and 
+                references than lists and forward lists.</p>
+        </section>
+        <header class="header1"><h2>Declaration:</h2></header>
+        <section class="declaration">
+            <p>deque <strong>&lt;</strong> 'DataType' <strong>&gt;</strong> 'name of the deque' ( 'size of the deque' );</p>
+            <p><strong>example: </strong>deque <strong>&lt;</strong> <span class="dt">int</span> <strong>&gt;</strong> deq1 ( 5 );</p>
+        </section>
+        <em>here are the list of functions associated with deque</em>
+        <section class="list">
+            <ol>
+                <li><strong>begin( )</strong>: Returns an iterator pointing to the first element in the deque.</li><br>
+                <li><strong>end( )</strong>: Returns an iterator pointing to the theoretical element that follows the last element in the deque.</li><br>
+                <li><strong>size( )</strong>: Returns the number of elements in the deque.</li><br>
+                <li><strong>max_size( )</strong>: Returns the maximum number of elements that the deque can hold.</li><br>
+                <li><strong>capacity( )</strong>: Returns the size of the storage space currently allocated to the deque expressed as number of elements.</li><br>
+                <li><strong>empty( )</strong>: Returns whether the container is empty.</li><br>
+                <li><strong>reference operator [ i ]</strong>: Returns a reference to the element at position ‘i’ in the deque.</li><br>
+                <li><strong>front( ) and back( )</strong>: Returns a reference to the first and last elements of the deque respecively.</li><br>
+                <li><strong>push_back( )</strong>: It push the elements into a deque from the back</li><br>
+                <li><strong>push_front( )</strong>: It push the elements into a deque from the front</li><br>
+                <li><strong>pop_back( )</strong>: It is used to pop or remove the last element of a deque.</li><br>
+                <li><strong>pop_front( )</strong>: It is used to pop or remove the first element of a deque.</li><br>
+                <li><strong>insert( )</strong>: It inserts new elements before the element at the specified position</li><br>
+                <li><strong>erase( )</strong>: It is used to remove elements from a container from the specified position or range.</li><br>
+                <li><strong>clear( )</strong>: It is used to remove all the elements of the deque container</li><br>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>

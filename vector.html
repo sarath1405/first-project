@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>vector</title>
+</head>
+<body>
+    <header class="header"><h1>CP HANDBOOK</h1></header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="file:///C:/Users/SARATH%20CHANDRA/OneDrive/Desktop/cpp%20project/html/home.html" class="button"><span>Home</span></a></li>
+            <li><a href="file:///C:/Users/SARATH%20CHANDRA/OneDrive/Desktop/cpp%20project/html/containers.html" class="button1"><span>Containers</span></a></li>
+            <li><a href="#" class="button"><span>Algorithms</span></a></li>
+            <li><a href="#" class="button"><span>About</span></a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <header class="header"><h1>Vector :</h1></header>
+        <section class="introduction">
+            <p>Vectors are sequence containers representing arrays that can change in size.</p>
+            <p>Just like arrays, vectors use contiguous storage locations for their elements, 
+                which means that their elements can also be accessed using offsets on regular 
+                pointers to its elements, and just as efficiently as in arrays. But unlike arrays, 
+                their size can change dynamically, with their storage being handled automatically
+                by the container.</p>
+            <p>Internally, vectors use a dynamically allocated array to store their elements. 
+                This array may need to be reallocated in order to grow in size when new elements 
+                are inserted, which implies allocating a new array and moving all elements to it.
+                This is a relatively expensive task in terms of processing time, and thus, vectors 
+                do not reallocate each time an element is added to the container.</p>
+            <p>Compared to the other dynamic sequence containers (deques, lists and forward_lists), 
+                vectors are very efficient accessing its elements (just like arrays) and relatively 
+                efficient adding or removing elements from its end.</p>
+        </section>
+        <header class="header1"><h2>Declaration:</h2></header>
+        <section class="declaration">
+            <p>vector <strong>&lt;</strong> 'DataType' <strong>&gt;</strong> 'name of the vector' ( 'size of the vector' );</p>
+            <p><strong>example: </strong>vector <strong>&lt;</strong> <span class="dt">int</span> <strong>&gt;</strong> vec1 ( 5 );</p>
+        </section>
+        <em>here are the list of functions associated with vector</em>
+        <section class="list">
+            <ol>
+                <li><strong>begin( )</strong>: Returns an iterator pointing to the first element in the vector.</li><br>
+                <li><strong>end( )</strong>: Returns an iterator pointing to the theoretical element that follows the last element in the vector.</li><br>
+                <li><strong>size( )</strong>: Returns the number of elements in the vector.</li><br>
+                <li><strong>max_size( )</strong>: Returns the maximum number of elements that the vector can hold.</li><br>
+                <li><strong>capacity( )</strong>: Returns the size of the storage space currently allocated to the vector expressed as number of elements.</li><br>
+                <li><strong>empty( )</strong>: Returns whether the container is empty.</li><br>
+                <li><strong>reference operator [ i ]</strong>: Returns a reference to the element at position ‘i’ in the vector.</li><br>
+                <li><strong>front( ) and back( )</strong>: Returns a reference to the first and last elements of the vector respecively.</li><br>
+                <li><strong>push_back( )</strong>: It push the elements into a vector from the back</li><br>
+                <li><strong>pop_back( )</strong>: It is used to pop or remove the last element of a vector.</li><br>
+                <li><strong>insert( )</strong>: It inserts new elements before the element at the specified position</li><br>
+                <li><strong>erase( )</strong>: It is used to remove elements from a container from the specified position or range.</li><br>
+                <li><strong>clear( )</strong>: It is used to remove all the elements of the vector container</li><br>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>
