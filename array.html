@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>array</title>
+</head>
+<body>
+    <header class="header"><h1>CP HANDBOOK</h1></header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="file:///C:/Users/SARATH%20CHANDRA/OneDrive/Desktop/cpp%20project/html/docs/index.html" class="button"><span>Home</span></a></li>
+            <li><a href="file:///C:/Users/SARATH%20CHANDRA/OneDrive/Desktop/cpp%20project/html/docs/containers.html" class="button1"><span>Containers</span></a></li>
+            <li><a href="#" class="button"><span>Algorithms</span></a></li>
+            <li><a href="#" class="button"><span>About</span></a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <header class="header"><h1>Array :</h1></header>
+        <section class="introduction">
+            <p>The array is a collection of homogeneous objects and this array 
+                container is defined for constant size arrays or (static size). 
+                This container wraps around fixed-size arrays and the information 
+                of its size are not lost when declared to a pointer.</p>
+            <p>This C++ STL array is a kind of sequential container and is not 
+                used extremely in regular programming or in competitive programming 
+                but sometimes its member function provides an upper edge to it over 
+                the regular normal array that we use in our daily life. So, we are 
+                discussing some of the important member function that is used with 
+                such kind of array:</p>
+        </section>
+        <header class="header1"><h2>Declaration:</h2></header>
+        <section class="declaration">
+            <p>array <strong>&lt;</strong> 'DataType', 'size of array' <strong>&gt;</strong> 'name of the array';</p>
+            <p><strong>example: </strong>array <strong>&lt;</strong> <span class="dt">int</span>, 5 <strong>&gt;</strong> arr1;</p>
+        </section>
+        <em>here are the list of functions associated with array</em>
+        <section class="list">
+            <ol>
+                <li><strong>begin( ) and end( ) function</strong>: Both these begin( ) and end( ) functions 
+                returns the iterator to the beginning and ending of the array respecively.</li><br>
+                <li><strong>[ ] Operator</strong>: This is similar to the normal array, 
+                    we use it to access the element stored at the particular index.</li><br>
+                <li><strong>front( ) and back( ) function</strong>: These methods are used to 
+                    access the first and the last element of the array directly.</li><br>
+                <li><strong>swap( ) function</strong>: This swap function is used to swap the content 
+                    of the two arrays.</li><br>
+                <li><strong>empty( ) function</strong>: This function is used to check whether the 
+                    declared STL array is empty or not, if it is empty then it returns true else false.</li><br>
+                <li><strong>size( ) or max_size( ) and sizeof( ) function</strong>: Both size( ) or max_size( ) 
+                    are used to get the maximum number of indexes in the array while sizeof( ) is used to get 
+                    the total size of array in bytes.</li><br>
+                <li><strong>data( )</strong>: This function returns the pointer to the first element of the 
+                    array object. Because elements in the array are stored in contiguous memory locations. 
+                    This data( ) function return us the base address of the string/char type object.</li><br>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>
