@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(#CAB8FF,#B5DEFF);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+em {
+    font-size: small;
+}
+#navbar span{
+    font-weight: bold;
+}
+.header {
+    color: #000000;
+    font-family:'IM Fell English SC', serif;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    padding-top: 55px;
+    word-spacing: 5px;
+}
+
+#navbar {
+    border: 0px solid black;
+}
+
+#navbar ul{
+    text-align: right;
+    margin-right: 250px;
+    margin-top: 50px;
+    margin-bottom: 3px;
+}
+#navbar li{
+    display: inline;
+    padding-right: 25px;
+}
+#navbar a{
+    color: rgb(0, 0, 0);
+    font-size:18.5px;
+    text-decoration: none;
+    padding: 7px 7px;
+    letter-spacing: 3px;
+}
+
+.button {
+    border: 0px solid;
+    border-radius: 3px;
+}
+.button span{
+    padding: 2px 5px;
+}
+.button:hover span{
+    box-shadow: -3px 3px 8px 0px;
+    border-radius: 5px;
+    background-color: #d4c6fd;
+}
+
+.button1 {
+    border: 0px solid;
+    background-color: #C1FFD7;
+    border-radius: 3px;
+}
+
+.box {
+    width: 1100px;
+    height: 570px;
+    border-radius: 10px;
+    background: linear-gradient(#C1FFD7,#E3FDFD);
+    margin-left: 210px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    box-shadow: -8px 8px 15px 0px;
+}
